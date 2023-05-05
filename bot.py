@@ -1,5 +1,11 @@
 import discord
 from discord.ext import commands
+import json
+
+with open('config.json') as f:
+    config = json.load(f)
+
+client.run(config['token'])
 
 intents = discord.Intents.default() 
 # This will enable the default set of intents
@@ -14,7 +20,6 @@ import asyncio
 import sqlite3
 from discord import Member
 
-token = "OTIyNDM3NzAyNDIxNDc5NDU0.Gtvpqj.-5H71XTpIvNYuesvtpjhb9cz00nCK81TN1jVKI"
 
 client.remove_command('help')
 
