@@ -1,5 +1,10 @@
 import discord
 from discord.ext import commands
+
+intents = discord.Intents.default() 
+# This will enable the default set of intents
+client = commands.Bot(command_prefix='!', intents=intents)
+
 import os
 import threading
 import requests
@@ -11,7 +16,6 @@ from discord import Member
 
 token = "T1RJeU5ETTNOekF5TkRJeE5EYzVORFUwLkd0dnBxai4tNUg3MVhUcEl2Tll1ZXN2dHBqaGI5Y3owMG5DSzgxVE4xalZLSQ=="
 
-client = commands.Bot(command_prefix='!')
 client.remove_command('help')
 
 
