@@ -14,7 +14,7 @@ import asyncio
 import sqlite3
 from discord import Member
 
-token = "T1RJeU5ETTNOekF5TkRJeE5EYzVORFUwLkd0dnBxai4tNUg3MVhUcEl2Tll1ZXN2dHBqaGI5Y3owMG5DSzgxVE4xalZLSQ=="
+token = "OTIyNDM3NzAyNDIxNDc5NDU0.Gtvpqj.-5H71XTpIvNYuesvtpjhb9cz00nCK81TN1jVKI"
 
 client.remove_command('help')
 
